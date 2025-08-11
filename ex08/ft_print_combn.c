@@ -6,7 +6,7 @@
 /*   By: ahabbard <ahabbard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 16:49:24 by ahabbard          #+#    #+#             */
-/*   Updated: 2025/08/12 01:29:21 by ahabbard         ###   ########.fr       */
+/*   Updated: 2025/08/12 01:32:22 by ahabbard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ void	ft_print_combn(int size)
 }
 
 /*
-nt	main(void)
+int	main(void)
 {
 	ft_print_combn(1);
 	write(1, "\n_________________\n", 20);
