@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ahabbard <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ahabbard <ahabbard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 07:47:39 by ahabbard          #+#    #+#             */
-/*   Updated: 2025/08/07 22:16:58 by ahabbard         ###   ########.fr       */
+/*   Updated: 2025/08/11 22:21:26 by ahabbard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_com2(void)
+void	ft_print_comb2(void)
 {
 	int		i;
 	int		j;
