@@ -6,7 +6,7 @@
 /*   By: ahabbard <ahabbard@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 16:49:24 by ahabbard          #+#    #+#             */
-/*   Updated: 2025/08/12 01:32:22 by ahabbard         ###   ########.fr       */
+/*   Updated: 2025/08/12 15:16:51 by ahabbard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,10 @@ void	ft_reset(int *position, int *size, char *comb)
 	{
 		comb[index + 1] = comb[index] + 1;
 		index++;
+	}
+	if (*size == 1 && !ft_max_value(position, size, comb))
+	{
+		write(1, comb, *size + 2);
 	}
 }
 
@@ -57,7 +61,7 @@ void	ft_print_combn(int size)
 		while (!ft_max_value(&index, &size, comb))
 		{
 			ft_reset(&index, &size, comb);
-			if (!ft_max_value(&index, &size, comb))
+			if (size != 1)
 				write(1, comb, size + 2);
 		}
 		while (index > 0 && ft_max_value(&index, &size, comb))
@@ -73,17 +77,14 @@ void	ft_print_combn(int size)
 /*
 int	main(void)
 {
-	ft_print_combn(1);
+	ft_print_combn(2);
 	write(1, "\n_________________\n", 20);
 	ft_print_combn(3);
 	write(1, "\n__________________\n", 20);
 	ft_print_combn(9);
 	write(1, "\n__________________\n", 20);
-	ft_print_combn(10);
+	ft_print_combn(1);
 	write(1, "\n__________________\n", 20);
-	ft_print_combn(0);
-	write(1, "___________________\n", 20);
-	ft_print_combn(-1);
 	return (0);
 }
  */
